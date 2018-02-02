@@ -5,50 +5,150 @@
 	color: black;
 	background: linear-gradient(gainsboro, lightblue);}
 	h1 {
-	background:olivedrab;
-	color: white;
-	font-family: arial;
-	text-align: center;
-	padding: 20px;
-	}
+		background:darkcyan;
+		color: white;
+		font-family: arial;
+		text-align: center;
+		padding: 20px;
+		}
+
+	.topnav {
+		background-color: darkcyan;
+		overflow: hidden;
+		}
+	.topnav a {
+		float: left;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		font-family: arial;
+		}
+	.topnav a:hover {
+		background-color: black;
+		color: white;
+		}
+	.topnav a.active {
+		background-color: cyan;
+		color:black;
+		}
+
+
 	h3 {
-	color: white;
-	font-family: arial;
-	}
+		background: grey;
+		color: white;
+		font-family: arial;
+		padding: 8px;
+		width: 750px;
+		}
 	p {
-	font-family: georgia;
-	font-size: 1em;
-	width: 700px;
-	}
+		font-family: georgia;
+		font-size: 1em;
+		width: 700px;
+		}
+
+	#indent {
+		text-indent: 10px;
+		}
+	span {
+		font-style: italic;
+		font-weight: bold;
+		}
+
 	ol li {
-	counter-increment: list;
-	list-style-type: none;
-	position: relative;
-	padding: 5px;
-	}
+		counter-increment: list;
+		list-style-type: none;
+		position: relative;
+		}
 	ol li:before {
-	color: olivedrab;
-	content: counter(list);
-	padding-right: 5px;
-	}
+		color: white;
+		content: counter(list);
+		padding-right: 5px;
+		}
+	img {
+		border-color:white;
+		}
+	.body {
+		margin-left:50px;
+		}
+	address {
+		position: fixed;
+		bottom: 40px;
+		text-align: center;
+		font-family: arial;
+		}
+	#mod {
+		font-style: italic;
+		}
+	dt {
+		font-weight: bold;
+		}
 
 		</style>
 	</head>
 
 	<body>
-		<h1>Illustration Portfolio</h1>
-		<h3>A NEW CODING HOPE</h2>
-		<p>The purpose of this website is to hopefully act as a digital portfolio for my current and future illustration and graphic design work.</p>
-		<p>This desire has come from a life-long interest in art as a whole. From traditional Renaissance work to modern digital illustration and animation, I am all for learning about it (or at least trying to).</p>
-		<h3>Things About Me</h3>
-		<p>With my hopes and desires for this website’s future set aside, here are a few factoids about myself:<br/> 
-		<ol type: 1>
-			<li>I am a dual citizen of the USA & Canada by means of birth (though my family currently resides in Canada).</li>
-			<li>I am currently a graphic design major, though I am going to attempt changing it to a Liberal Studies Major with a focus on Illustration. I may add a Communications minor. We’ll see.</li>
-			<li>I lived on the Graceland campus as a Hall Director’s kid for 8 years up until 2009.</li> 
-			<li>Aside from art, I enjoy baking, hiking, playing video and board games, posing unusual questions to attempt at unusual conversations, and food in general.</li>
-			<li>This is my second attempt at learning html.</li>
-			</p>
+		<h1>Forestry Ink</h1>
+		<div class=topnav>
+			<a class= active href=#home>Home</a>
+			<a href= #about>About</a>
+			<a href= #portfolio>Portfolio</a>
+			<a href= #more>More</a>
+			<a href= #contact>Contact</a>
+		</div>
+		<a href=http://alreadyshared.com/User/safiresis/2276821014/>
+			<img src=https://scontent.cdninstagram.com/vp/a106259463935d892d817bbc85ac12df/5B0A33D6/t51.2885-15/s640x640/sh0.08/e35/20065599_131781400748468_2287571282033639424_n.jpg border=5 hspace=50 vspace=50 align=right>
+		</a>
+
+		<div class=body>
+			<h3>A NEW CODING HOPE</h3>
+			<div id=indent>
+				<p>The purpose of this website is to hopefully act as a digital portfolio for my current and future illustration and graphic design work.</p>
+				<p>This desire has come from a life-long interest in art as a whole. From traditional Renaissance work to modern digital illustration and animation, <span> I am all for learning about it </span> (or at least trying to).</p>
+			</div>
+
+			<h3>ABOUT ME</h3>
+			<p>With my hopes and desires for this website’s future set aside, here are a few factoids about myself:<br/>
+			</p> 
+			<ol type: 1>
+				<li>I am a dual citizen of the USA & Canada by means of birth (though my family currently resides in Canada).</li>
+				<li>I am currently a graphic design major, though I may add a Communications minor. We’ll see.</li>
+				<li>I lived on the Graceland campus as a Hall Director’s kid for 8 years up until 2009.</li> 
+				<li>Aside from art, I enjoy baking, hiking, playing video and board games, and food in general.</li>
+				<li>This is my second attempt at learning html.</li>
+			</ol>
+
+			<h3>EXTRAS</h3>
+			<p>The website will also include information about:</p>
+			<ul>
+				<li>Illustrators Worth Knowing</li>
+				<li>Developments in Illustration Approaches</li>
+				<li>Good Practices for Independent Illustrators</li>
+				<li>Types of Illustration</li>
+				<li>Online Illustration Resources</li>
+			</ul>
 		
+			<div id=mod>
+				<h3>RECOMMENDED WEBSITES</h3>
+				<p>The resources below include news, tools, artists, and more to check out in the mean time as this website develops.<p>
+			</div>
+				<dl>
+					<dt><a href=http://www.cartoonbrew.com/>Cartoon Brew</a></dt>
+					<dd>A Cartoon News site that looks into upcoming animated features, showcases rising animators, and more.</dd>
+					<dt><a href=https://line-of-action.com/>Line of Action</a></dt>
+					<dd>Figure drawing photo resources, which you can set to timers and choose types of figures/parts of the human body to draw</dd>
+					<dt><a href=http://www.alhirschfeldfoundation.org/>Al Hirshfeld Foundation</a></dt>
+					<dd>One of the first artists to be well recognized for their caricature work. His art inspired the Disney short “Rhapsody in Blue”</dd>
+				</dl>
+		</div>
+
+		<address>
+			Written by Anonymous<br>
+			1 University Pl.<br>
+			Lamoni, IA<br>
+			50140<br>
+			</b>
+		</address>
 	</body>
 </html>
