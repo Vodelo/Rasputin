@@ -1,10 +1,10 @@
 <html>
 <head>
 <style>
-	body {
+	.bod {
 	color: black;
 	background: linear-gradient(gainsboro, lightblue);}
-	h1 {
+	#web {
 		background:darkcyan;
 		color: white;
 		font-family: arial;
@@ -35,14 +35,14 @@
 		}
 
 
-	h3 {
+	.title {
 		background: grey;
 		color: white;
 		font-family: arial;
 		padding: 8px;
 		width: 750px;
 		}
-	p {
+	.word {
 		font-family: georgia;
 		font-size: 1em;
 		width: 700px;
@@ -51,28 +51,28 @@
 	#indent {
 		text-indent: 10px;
 		}
-	span {
+	#emphasis {
 		font-style: italic;
 		font-weight: bold;
 		}
 
-	ol li {
+	.numb li::before{
 		counter-increment: list;
 		list-style-type: none;
 		position: relative;
-		}
-	ol li:before {
-		color: white;
-		content: counter(list);
 		padding-right: 5px;
 		}
-	img {
-		border-color:white;
+	.pic {
+		margin: 50px 50px;
+		position: absolute;
+		right: 0px;
+		border: white 10px solid;
 		}
+
 	.body {
 		margin-left:50px;
 		}
-	address {
+	#once {
 		position: fixed;
 		bottom: 40px;
 		text-align: center;
@@ -81,15 +81,15 @@
 	#mod {
 		font-style: italic;
 		}
-	dt {
+	.main {
 		font-weight: bold;
 		}
 
 		</style>
 	</head>
 
-	<body>
-		<h1>Forestry Ink</h1>
+	<body class=bod>
+		<h1 id=web>Forestry Ink</h1>
 		<div class=topnav>
 			<a class= active href=#home>Home</a>
 			<a href= #about>About</a>
@@ -98,20 +98,21 @@
 			<a href= #contact>Contact</a>
 		</div>
 		<a href=http://alreadyshared.com/User/safiresis/2276821014/>
-			<img src=https://scontent.cdninstagram.com/vp/a106259463935d892d817bbc85ac12df/5B0A33D6/t51.2885-15/s640x640/sh0.08/e35/20065599_131781400748468_2287571282033639424_n.jpg border=5 hspace=50 vspace=50 align=right>
+			<img src=https://scontent.cdninstagram.com/vp/a106259463935d892d817bbc85ac12df/5B0A33D6/t51.2885-15/s640x640/sh0.08/e35/20065599_131781400748468_2287571282033639424_n.jpg class=pic>
+			</div>
 		</a>
 
 		<div class=body>
-			<h3>A NEW CODING HOPE</h3>
+			<h3 class=title>A NEW CODING HOPE</h3>
 			<div id=indent>
-				<p>The purpose of this website is to hopefully act as a digital portfolio for my current and future illustration and graphic design work.</p>
-				<p>This desire has come from a life-long interest in art as a whole. From traditional Renaissance work to modern digital illustration and animation, <span> I am all for learning about it </span> (or at least trying to).</p>
+				<p class=word>The purpose of this website is to hopefully act as a digital portfolio for my current and future illustration and graphic design work.</p>
+				<p class=word>This desire has come from a life-long interest in art as a whole. From traditional Renaissance work to modern digital illustration and animation, <span id=emphasis> I am all for learning about it </span> (or at least trying to).</p>
 			</div>
 
-			<h3>ABOUT ME</h3>
-			<p>With my hopes and desires for this website’s future set aside, here are a few factoids about myself:<br/>
+			<h3 class=title>ABOUT ME</h3>
+			<p class=word>With my hopes and desires for this website’s future set aside, here are a few factoids about myself:<br/>
 			</p> 
-			<ol type: 1>
+			<ol type: 1 class=numb>
 				<li>I am a dual citizen of the USA & Canada by means of birth (though my family currently resides in Canada).</li>
 				<li>I am currently a graphic design major, though I may add a Communications minor. We’ll see.</li>
 				<li>I lived on the Graceland campus as a Hall Director’s kid for 8 years up until 2009.</li> 
@@ -119,8 +120,8 @@
 				<li>This is my second attempt at learning html.</li>
 			</ol>
 
-			<h3>EXTRAS</h3>
-			<p>The website will also include information about:</p>
+			<h3 class=title>EXTRAS</h3>
+			<p class=word>The website will also include information about:</p>
 			<ul>
 				<li>Illustrators Worth Knowing</li>
 				<li>Developments in Illustration Approaches</li>
@@ -130,20 +131,20 @@
 			</ul>
 		
 			<div id=mod>
-				<h3>RECOMMENDED WEBSITES</h3>
-				<p>The resources below include news, tools, artists, and more to check out in the mean time as this website develops.<p>
+				<h3 class=title>RECOMMENDED WEBSITES</h3>
+				<p class=word>The resources below include news, tools, artists, and more to check out in the mean time as this website develops.<p>
 			</div>
 				<dl>
-					<dt><a href=http://www.cartoonbrew.com/>Cartoon Brew</a></dt>
+					<dt class=main><a href=http://www.cartoonbrew.com/>Cartoon Brew</a></dt>
 					<dd>A Cartoon News site that looks into upcoming animated features, showcases rising animators, and more.</dd>
-					<dt><a href=https://line-of-action.com/>Line of Action</a></dt>
+					<dt class=main><a href=https://line-of-action.com/>Line of Action</a></dt>
 					<dd>Figure drawing photo resources, which you can set to timers and choose types of figures/parts of the human body to draw</dd>
-					<dt><a href=http://www.alhirschfeldfoundation.org/>Al Hirshfeld Foundation</a></dt>
+					<dt class=main><a href=http://www.alhirschfeldfoundation.org/>Al Hirshfeld Foundation</a></dt>
 					<dd>One of the first artists to be well recognized for their caricature work. His art inspired the Disney short “Rhapsody in Blue”</dd>
 				</dl>
 		</div>
 
-		<address>
+		<address id=once>
 			Written by Anonymous<br>
 			1 University Pl.<br>
 			Lamoni, IA<br>
