@@ -1,0 +1,72 @@
+#button {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin: auto;
+	top: 20px;
+	padding: 15px;
+	}
+
+
+.container {
+	position: relative;
+	}
+
+.overlay {
+	position: absolute;
+ 	height: 50px;
+ 	width: 50px;
+	top: 15px;
+	margin-left: 15px;
+ 	opacity: 0;
+ 	transition: .5s ease;
+ 	background-color: white;
+	border-radius: 50%;
+	}
+
+.container:hover .overlay {
+	opacity: 1;
+	}
+
+#filler {
+	height: 80%;
+	width: 80%;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	}
+
+.title {
+	color: #008CBA;
+	font-family: arial;
+	font-size: 8pt;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+
+p {
+	font-style: normal;
+	font-size: 15pt;
+	font-family: arial;
+	color: white;
+	position: absolute;
+	left: 1100px;
+	bottom: 200px;
+	}
+
+#begin {
+	font-family: arial;
+	font-size: 13pt;
+	font-style: italic;
+	color: white;
+	position: absolute;
+	bottom: 40px;
+	right: 60px;
+	left: 1200px;
+	text-align: justify;
+	}
+
+
+
