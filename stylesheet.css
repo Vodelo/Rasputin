@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	}		
+h1 {
+	font-family: impact;
+	background-color: midnightblue;
+	padding: 10px;
+	margin: 0;
+	color: white;
+	text-align: center;
+	}
+
+h2 {
+	font-family: impact;
+	font-size: 30pt;
+	margin: 15;
+	text-align: center;
+	color: white;
+	}
+
+#bar {
+	margin: auto;
+	heigh: 100px;
+	width: 30%;
+	background-color: midnightblue;
+	}
+	
+		
+#nav {
+	background-color: silver;
+	text-align: center;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		display: inline-block
+		}
+
+	li {
+		float: left;
+		}
+
+	li a{
+		display: block;
+		font-family: tahoma;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		}
+		
+	li a:hover:not(.active) {
+		background-color: midnightblue;
+		}
+	
+
+		
+span {
+	font-size: 20px;
+	font-style: italic;
+	}
+
+
+
+img {
+	float: left;
+	margin: 5px 20px 200px 680px;
+	}
+
+p {
+	font-family: tahoma;
+	margin: 10px 680px 0px 0px;
+	text-align: justify;
+	text-indent: 50px;
+	}
+
+a {
+	font-family: tahoma;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0px 30px 0px 30px;
+	}
+
+#name {
+	font-weight: bold;
+	}
+
