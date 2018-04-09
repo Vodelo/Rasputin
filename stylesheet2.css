@@ -1,3 +1,8 @@
+
+body {
+	background: linear-gradient(to right bottom, #818F96 50%, #94A5AD 50%);
+}
+
 #button {
 	border-radius: 50%;
 	height: 50px;
@@ -5,12 +10,11 @@
 	margin: auto;
 	top: 20px;
 	padding: 15px;
-	}
-
+}
 
 .container {
 	position: relative;
-	}
+}
 
 .overlay {
 	position: absolute;
@@ -22,11 +26,11 @@
  	transition: .5s ease;
  	background-color: white;
 	border-radius: 50%;
-	}
+}
 
 .container:hover .overlay {
 	opacity: 1;
-	}
+}
 
 #filler {
 	height: 80%;
@@ -34,17 +38,26 @@
 	position: absolute;
 	top: 25px;
 	right: 25px;
-	}
+}
 
 .title {
-	color: #008CBA;
+	color: #818F96;
 	font-family: arial;
 	font-size: 8pt;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	}
+}
+
+h1 {
+	font-family: arial;
+	color: white;
+	font-size: 120pt;
+	position: static;
+	text-align: right;
+	margin: 0;
+}
 
 p {
 	font-style: normal;
@@ -54,7 +67,7 @@ p {
 	position: absolute;
 	left: 1100px;
 	bottom: 200px;
-	}
+}
 
 #begin {
 	font-family: arial;
@@ -62,11 +75,36 @@ p {
 	font-style: italic;
 	color: white;
 	position: absolute;
-	bottom: 40px;
-	right: 60px;
-	left: 1200px;
+	top: 40px;
+	right: 70px;
+	width: 290px;
 	text-align: justify;
-	}
+	text-indent: 20px;
+}
 
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	margin: auto;
+	position: relative;
+	bottom: 13%;
+}
+
+.column {
+	flex: 25%;
+	margin: auto;
+	max-width: 25%;
+	padding: 0 2px;
+}
+
+
+#gallery {
+		display: block;
+		width: 300px;
+		height: 300px;
+		object-fit: cover;
+		vertical-align: middle;
+}
 
 
