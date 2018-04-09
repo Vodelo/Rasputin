@@ -1,6 +1,7 @@
 
 body {
 	background: linear-gradient(to right bottom, #818F96 50%, #94A5AD 50%);
+	margin: 0;
 }
 
 #button {
@@ -18,14 +19,28 @@ body {
 
 .overlay {
 	position: absolute;
- 	height: 50px;
- 	width: 50px;
+ 	height: 52px;
+ 	width: 52px;
 	top: 15px;
-	margin-left: 15px;
+	margin-left: 14px;
  	opacity: 0;
  	transition: .5s ease;
- 	background-color: white;
+ 	background-color: 818F96;
 	border-radius: 50%;
+}
+
+#backoverlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 2;
+	cursor: pointer;
 }
 
 .container:hover .overlay {
@@ -41,7 +56,7 @@ body {
 }
 
 .title {
-	color: #818F96;
+	color: white;
 	font-family: arial;
 	font-size: 8pt;
 	position: absolute;
@@ -50,13 +65,14 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-h1 {
+#page {
 	font-family: arial;
 	color: white;
+	font-style: bold;
 	font-size: 120pt;
-	position: static;
-	text-align: right;
-	margin: 0;
+	position: fixed;
+	right: 0;
+	bottom: 0;
 }
 
 p {
@@ -78,8 +94,6 @@ p {
 	top: 40px;
 	right: 70px;
 	width: 290px;
-	text-align: justify;
-	text-indent: 20px;
 }
 
 .row {
@@ -106,5 +120,4 @@ p {
 		object-fit: cover;
 		vertical-align: middle;
 }
-
 
