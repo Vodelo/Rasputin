@@ -1,0 +1,33 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div class=final>
+             <div id=result></div>
+             <div id=lngth></div>
+        </div> 
+        <script>
+            var str;
+            var str = prompt("Would you kindly enter a phrase?");
+            document.write("Number of letters: " + str.length + "</br>");
+
+            var newcodes = function() {
+                var re = /[\W_]/g;
+                var lowRegStr = str.toLowerCase().replace(re, '');
+                var reverseStr = lowRegStr.split('').reverse().join('');
+                return [reverseStr, lowRegStr];
+            }
+
+            var codes = newcodes();
+            var reverseStr = codes[0];
+            var lowRegStr = codes[1];
+
+            if (reverseStr === lowRegStr) {
+                document.write(reverseStr.fontcolor("blue"));
+            } else {
+                document.write(reverseStr);
+            }
+
+        </script>
+    </body>
+</html>
