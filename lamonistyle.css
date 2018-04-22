@@ -1,0 +1,48 @@
+body {
+            background-image: url(map.png);
+            font-family: tahoma;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: navy;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: F3F4FF;
+            color: tan;
+        }
+
+        p {
+            font-size: 10pt;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        #title {
+            color: navy;
+            font-size: 70pt;
+            font-style: italic;
+            position: absolute;
+            bottom: 25px;
+        }
